@@ -1,0 +1,255 @@
+body {
+    margin: 0 auto;
+}
+
+.img-container {
+    height: 33.33vh;
+    width: 100%;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-text {
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    line-height: 3px;
+}
+
+.main-container {
+    margin-top: -15vh;
+    display: flex;
+    justify-content: center;
+}
+
+.subscription-wrapper {
+    min-height: 75%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.subscription-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 205px;
+    height: auto;
+    width: 32vh;
+    background-color: white;
+    margin: 0 35px;
+    border: 2px solid rgb(235, 234, 234);
+    position: relative;
+}
+
+.subscription-box.highlighted {
+    border: 2px solid rgb(4, 106, 140);
+    overflow: hidden;
+}
+
+.tape {
+    position: absolute;
+    height: 20px;
+    width: 80px;
+    background-color: rgb(4, 106, 140);
+    top: 10px;
+    right: -20px;
+    transform: rotate(45deg);
+    text-align: center;
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.price {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    color: rgb(4, 106, 140);
+    font-weight: bold;
+}
+
+.price_2 {
+    text-align: center;
+    color: rgb(4, 106, 140);
+    font-size: 14px;
+}
+
+.header-box {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 14px;
+}
+
+.subscription-img {
+    height: 130px;
+    margin-top: -10px;
+}
+
+.device-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.subscription-text {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 0 10px 0px 0px;
+}
+
+.subscription-text > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+li:before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-image: url('check-icon.svg');
+    background-size: contain;
+    left: 5px;
+}
+
+
+
+.order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.order-now {
+    height: 30px;
+    width: 85%;
+    border-radius: 10px;
+    background-color: rgb(4, 106, 140);
+    color: white;
+    font-size: 15px;
+    border: none;
+    opacity: 90%;
+}
+
+.order-now:hover {
+    opacity: 100%;
+}
+
+.current-offers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 2vw;
+}
+
+.current-offers > p {
+    color: rgb(4, 106, 140);
+    white-space: nowrap;
+    margin: 0;
+}
+
+.line {
+    height: 2px;
+    width: 34vw;
+    background-color: rgb(4, 106, 140);
+    margin: 0;
+}
+
+.poster-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.poster {
+   width: 70%;
+}
+
+.poster-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Smartphone-Mode */
+@media screen and (max-width: 768px) {
+
+    .img-container {
+        height: 12vh;
+    }
+
+    .bg-text {
+        right: 3%;
+        font-size: 10px;
+        line-height: 3px;
+        top: 5px;
+    }
+    
+    .main-container {
+        margin-top: -30px;
+    }
+
+    .subscription-wrapper {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .subscription-box {
+        width: 200px;
+        margin-bottom: 15px;
+    }
+
+    .poster-wrapper {
+        margin-top: 20px;
+    }
+
+    .current-offers {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    
+}
+
+/* Tablet/Notebook-Mode */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .bg-text {
+        right: 3%;
+        font-size: 15px;
+        line-height: 3px;
+    }
+
+    .subscription-box {
+        margin: 0 15px;
+        width: 150px;
+    }
+
+    .current-offers {
+        font-size: 20px;
+    }
+}
